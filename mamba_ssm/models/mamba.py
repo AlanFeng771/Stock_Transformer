@@ -182,7 +182,7 @@ class Model(nn.Module):
     """
     def __init__(self, configs):
         super(Model, self).__init__()
-        self.mamba_backbone = MixerModel(d_model=configs.d_model, n_layer=configs.e_layers, vocab_size=4, device=configs.devices)
+        self.mamba_backbone = MixerModel(d_model=configs.d_model, n_layer=configs.e_layers, vocab_size=4, device='cuda')
         self.pred_len = configs.pred_len
 
         # Embedding

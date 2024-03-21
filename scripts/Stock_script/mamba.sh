@@ -1,4 +1,4 @@
-python -u run.py \
+python3 -u run.py \
   --is_training 1 \
   --root_path dataset/dataset/stock \
   --data_path stock01.csv \
